@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <div data-role="view" id="alarm" data-init="alarmView_init" data-layout="main" data-title="报警信息">
+            <div style="background-color: black">
+                <ul id="alarmListView" class="alarmListView"></ul>
+                <style scoped>
+                    .alarmListView>li
+                    {
+                        border-width: 0px !important;
+                        padding: 4px !important;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <script type="text/x-kendo-template" id="alarmListViewTemplate">
+            <div class="#= getAlarmCss(AlarmLogTypeName) #" style="font-size: 18px; background-color: rgb(239,239,239); width: 100%; border-radius: 10px;">
+                <style scoped>
+                    .alarm0
+                    {
+                    border: 6px rgba(154, 255, 152, .6) solid;
+                    }
+                    .alarm1
+                    {
+                    border: 6px rgba(255, 0, 0, .6) solid;
+                    }
+                    .alarm2
+                    {
+                    border: 6px rgba(255, 192, 0, 1) solid;
+                    }
+                    .alarm3
+                    {
+                    border: 6px rgba(255, 0, 0, .6) solid;
+                    }
+                    .alarm4
+                    {
+                    border: 6px rgba(255, 192, 0, .6) solid;
+                    }
+                    .alarm5
+                    {
+                    border: 6px rgba(255, 152, 152, 1) solid;
+                    }
+                    .alarm6
+                    {
+                    border: 6px rgba(255, 152, 152, .6) solid;
+                    }
+                    .alarm7
+                    {
+                    border: 6px rgba(255, 152, 152, .6) solid;
+                    }
+                </style>
+                <table>
+                    <col width="100px"/>
+                    <col/>
+                    <tr>
+                        <td rowspan="4" style="font-weight: bold; border-right: 1px lightgrey solid;">${AlarmLogTypeName}</td>
+                        <td style="font-weight: bold;">${ChannelName}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">${ChannelNo}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;">开始时间：#= kendo.toString(kendo.parseDate(StartTime), "yyyy/MM/dd HH:mm:ss") #</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:12px;">结束时间：#= kendo.toString(kendo.parseDate(EndTime), "yyyy/MM/dd HH:mm:ss") #</td>
+                    </tr>
+                </table>
+                <table style="width: 100%; border-top: 1px lightgrey solid;">
+                    <col/>
+                    <col/>
+                    <col/>
+                    <col/>
+                    <tr>
+                        <td style="font-weight: bold;">开始值：</td>
+                        <td style="font-weight: bold;">${StartValue}</td>
+                        <td style="font-weight: bold;">结束值：</td>
+                        <td style="font-weight: bold;">${EndValue}</td>
+                    </tr>
+                </table>
+            </div>
+        </script>
+    </body>
+</html>
