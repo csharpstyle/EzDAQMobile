@@ -84,32 +84,38 @@ function alarmListView_refresh() {
 function realtimeView_show() {
 }
 
-function getAlarmCss(alarmType) {
+function getMeasurementTypeCss(measurementTypeName) {
     var css = "";
-    switch (alarmType) {
-        case 0:
-            css = "alarm0";
+    switch (measurementTypeName) {
+        case "精密空调":
+            css = "0";
             break;
-        case 1:
-            css = "alarm1";
+        case "消防":
+            css = "1";
             break;
-        case 2:
-            css = "alarm2";
+        case "供配电":
+            css = "2";
             break;
-        case 3:
-            css = "alarm3";
+        case "能耗":
+            css = "3";
             break;
-        case 4:
-            css = "alarm4";
+        case "气象":
+            css = "4";
             break;
-        case 5:
-            css = "alarm5";
+        case "UPS":
+            css = "5";
             break;
-        case 6:
-            css = "alarm6";
+        case "温度":
+            css = "6";
             break;
-        case 7:
-            css = "alarm7";
+        case "IT系统":
+            css = "7";
+            break;
+        case "温湿度":
+            css = "8";
+            break;
+        case "漏水":
+            css = "9";
             break;
     }
     
