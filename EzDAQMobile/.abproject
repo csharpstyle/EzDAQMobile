@@ -2,7 +2,7 @@
   "ProjectName": "EzDAQMobile",
   "ProjectGuid": "62025b8c-2b67-4a0e-b6ba-c0a6809b86d2",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.EzDAQMobile",
+  "AppIdentifier": "cn.project7.EzDAQMobile",
   "DisplayName": "EzDAQMobile",
   "Author": "",
   "Description": "",
@@ -10,15 +10,15 @@
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
-	"2"
+    "2"
   ],
   "iOSBackgroundMode": [],
   "WP8TileTitle": "",
   "WP8Publisher": "",
   "WP8Capabilities": [],
   "WP8Requirements": [],
-  "WP8PublisherID": "",
-  "WP8ProductID": "",
+  "WP8PublisherID": "{385dc11d-7165-4125-83ca-9b2fddce9045}",
+  "WP8ProductID": "{1523d279-7915-4fbe-ab56-47ac437e67a3}",
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.5.0",
   "CorePlugins": [
