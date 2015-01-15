@@ -2,7 +2,7 @@
   "ProjectName": "EzDAQMobile",
   "ProjectGuid": "62025b8c-2b67-4a0e-b6ba-c0a6809b86d2",
   "projectVersion": 1,
-  "AppIdentifier": "cn.project7.EzDAQMobile",
+  "AppIdentifier": "com.virry.ezdaq",
   "DisplayName": "EzDAQMobile",
   "Author": "",
   "Description": "",
